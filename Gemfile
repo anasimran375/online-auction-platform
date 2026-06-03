@@ -65,4 +65,40 @@ group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
   gem "selenium-webdriver"
+
+group :test do
+  # Use system testing [https://github.com/rails/system-testing]
+  gem "capybara"
+  gem "selenium-webdriver"
+end
+
+# Authentication
+gem 'devise'
+
+# Authorization
+gem 'pundit'
+
+# Roles
+gem 'rolify'
+
+# Background jobs
+gem 'sidekiq'
+
+# Search
+gem 'pg_search'
+
+# Pagination
+gem 'pagy'
+
+# Environment variables
+gem 'dotenv-rails', groups: [:development, :test]
+
+# Admin panel
+gem 'activeadmin'
+
+# Rate limiting
+gem 'rack-attack'
+
+# Money formatting
+gem 'money-rails'
 end
